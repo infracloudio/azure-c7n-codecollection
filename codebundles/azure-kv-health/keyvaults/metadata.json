@@ -1,0 +1,69 @@
+{
+  "policy": {
+    "name": "keyvaults",
+    "resource": "azure.keyvault",
+    "filters": [
+      {
+        "type": "diagnostic-settings",
+        "key": "logs[?category == 'AuditEvent'][].enabled",
+        "value": true,
+        "op": "in",
+        "value_type": "swap"
+      }
+    ]
+  },
+  "version": "0.9.43",
+  "execution": {
+    "id": "fa54d5b2-9053-479f-aff7-e451bf4c425e",
+    "start": 1742814950.4889362,
+    "end_time": 1742814956.2821443,
+    "duration": 5.793208122253418
+  },
+  "config": {
+    "region": "AzureCloud",
+    "regions": [],
+    "cache": "memory",
+    "profile": null,
+    "account_id": "af107490-868a-4adc-8f44-4e6261114090",
+    "assume_role": null,
+    "session_policy": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "/home/runwhen/codecollection/codebundles/azure-kv-health",
+    "cache_period": 0,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "kv.j2"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {},
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2025-03-24T11:15:56.281720",
+      "Value": 0,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2025-03-24T11:15:56.281735",
+      "Value": 5.792238473892212,
+      "Unit": "Seconds"
+    }
+  ]
+}

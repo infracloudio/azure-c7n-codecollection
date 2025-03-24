@@ -1,0 +1,9 @@
+policies:
+  - name: keyvaults
+    resource: azure.keyvault
+    filters:
+      - type: diagnostic-settings
+        key: logs[?category == 'AuditEvent'][].enabled
+        value: True
+        op: in
+        value_type: swap

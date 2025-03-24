@@ -1,0 +1,2 @@
+2025-03-24 09:14:14,867 - custodian.policy - INFO - policy:keyvaults resource:azure.keyvault region:AzureCloud count:1 time:4.01
+2025-03-24 11:15:56,281 - custodian.policy - INFO - policy:keyvaults resource:azure.keyvault region:AzureCloud count:0 time:5.79
